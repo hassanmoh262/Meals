@@ -1,17 +1,38 @@
-# meals
+# Meal Recipes App 🍳
 
-A new Flutter project.
+A modern Flutter application for discovering, searching, and preparing delicious meal recipes from around the world. Built using Clean Architecture and responsive UI design.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features ✨
 
-A few resources to get you started if this is your first Flutter project:
+- **Explore Meals:** Browse recipes across various categories and culinary traditions.
+- **Recipe Details:** Step-by-step instructions, complete ingredient lists, and measurement details.
+- **Search & Filter:** Search recipes by name or filter by main ingredients and categories.
+- **Favorites:** Save your favorite recipes locally for quick access.
+- **Clean Architecture:** Built with separation of concerns for maintainability and testing.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack & Architecture 🛠️
+
+- **Framework:** [Flutter](https://flutter.dev) (Dart)
+- **Architecture:** Clean Architecture (Data, Domain, Presentation layers)
+- **State Management:** Flutter Bloc / Cubit
+- **Dependency Injection:** `GetIt`
+- **Value Equality:** `Equatable`
+- **Networking:** REST API (`http` / `dio`)
+
+---
+
+## Project Structure 📁
+
+```text
+lib/
+ ├── core/              # Network clients, utilities, theme, common widgets
+ └── features/
+     └── meals/
+         ├── data/      # Models, datasources, and repository implementations
+         ├── domain/    # Entities, repository interfaces, and use cases
+         └── presentation/ # Blocs/Cubits, pages, and UI widgets
+         
